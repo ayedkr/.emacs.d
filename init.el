@@ -19,26 +19,35 @@
 (doom-modeline-mode 1)
 (straight-use-package 'enlight)
 (straight-use-package 'magit)
+(straight-use-package 'centaur-tabs)
+(straight-use-package 'tree-sitter)
+(straight-use-package 'tree-sitter-langs)
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(centaur-tabs-mode t nil (centaur-tabs))
+ '(centaur-tabs-style "wave")
  '(column-number-mode nil)
- '(custom-enabled-themes '(doom-tokyo-night))
+ '(custom-enabled-themes '(doom-old-hope))
  '(custom-safe-themes
-   '("826a3324b602b304419d2b88a2a9b39694d68af9987aa64e26f9f8848088e510"
-     "4d12469f94f29f44958a3173a74985f1b6aa383f933a49735d07c3304d77c810"
+   '("dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2"
+     "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf"
      default))
  '(display-line-numbers-type 'relative)
  '(doom-modeline-bar-width 4)
+ '(doom-modeline-buffer-name t)
  '(doom-modeline-check-icon nil)
  '(doom-modeline-height 36)
  '(doom-modeline-hud nil)
  '(doom-modeline-icon nil)
  '(doom-modeline-major-mode-icon nil)
  '(doom-modeline-minor-modes t)
+ '(doom-modeline-mode t)
+ '(doom-themes-padded-modeline t)
  '(enlight-content "EMACS")
  '(horizontal-scroll-bar-mode nil)
  '(initial-buffer-choice 'enlight)
@@ -46,6 +55,12 @@
  '(menu-bar-mode nil)
  '(prog-mode-hook '(display-line-numbers-mode))
  '(scroll-bar-mode nil)
+ '(tab-bar-close-button-show nil)
+ '(tab-bar-format
+   '(tab-bar-format-menu-bar tab-bar-format-history tab-bar-format-tabs
+			     tab-bar-separator))
+ '(tab-bar-mode nil)
+ '(tab-line-close-button-show nil)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
