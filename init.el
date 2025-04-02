@@ -19,24 +19,22 @@
 (doom-modeline-mode 1)
 (straight-use-package 'enlight)
 (straight-use-package 'magit)
-(straight-use-package 'centaur-tabs)
 (straight-use-package 'tree-sitter)
 (straight-use-package 'tree-sitter-langs)
+(straight-use-package 'spacious-padding)
 
+(cond
+ ((eq system-type 'gnu/linux) (add-to-list 'default-frame-alist '(font . "Terminus"))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(centaur-tabs-mode t nil (centaur-tabs))
- '(centaur-tabs-style "wave")
  '(column-number-mode nil)
  '(custom-enabled-themes '(doom-old-hope))
  '(custom-safe-themes
-   '("dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2"
-     "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf"
-     default))
+   '("b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2" "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf" default))
  '(display-line-numbers-type 'relative)
  '(doom-modeline-bar-width 4)
  '(doom-modeline-buffer-name t)
@@ -51,14 +49,15 @@
  '(enlight-content "EMACS")
  '(horizontal-scroll-bar-mode nil)
  '(initial-buffer-choice 'enlight)
- '(initial-frame-alist '((font . "Terminus (TTF) for Windows")))
  '(menu-bar-mode nil)
  '(prog-mode-hook '(display-line-numbers-mode))
  '(scroll-bar-mode nil)
+ '(spacious-padding-mode t)
+ '(spacious-padding-widths
+   '(:internal-border-width 15 :header-line-width 4 :mode-line-width 0 :tab-width 4 :right-divider-width 30 :scroll-bar-width 8 :fringe-width 8))
  '(tab-bar-close-button-show nil)
  '(tab-bar-format
-   '(tab-bar-format-menu-bar tab-bar-format-history tab-bar-format-tabs
-			     tab-bar-separator))
+   '(tab-bar-format-menu-bar tab-bar-format-history tab-bar-format-tabs tab-bar-separator))
  '(tab-bar-mode nil)
  '(tab-line-close-button-show nil)
  '(tool-bar-mode nil))
