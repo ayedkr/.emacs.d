@@ -32,9 +32,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode nil)
- '(custom-enabled-themes '(doom-old-hope))
+ '(custom-enabled-themes '(doom-1337))
  '(custom-safe-themes
-   '("b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2" "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf" default))
+   '("014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2" "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf" default))
  '(display-line-numbers-type 'relative)
  '(doom-modeline-bar-width 4)
  '(doom-modeline-buffer-name t)
