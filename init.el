@@ -23,8 +23,14 @@
 (straight-use-package 'tree-sitter-langs)
 (straight-use-package 'spacious-padding)
 
-(cond
+(cond				       
  ((eq system-type 'gnu/linux) (add-to-list 'default-frame-alist '(font . "Terminus"))))
+
+
+(cond
+ ((eq system-type 'windows-nt)
+  (add-to-list 'default-frame-alist '(font . "Terminus (TTF) for Windows"))
+  (setq default-directory "c:/Users/Dylan")))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -34,7 +40,8 @@
  '(column-number-mode nil)
  '(custom-enabled-themes '(doom-1337))
  '(custom-safe-themes
-   '("014cb63097fc7dbda3edf53eb09802237961cbb4c9e9abd705f23b86511b0a69" "b754d3a03c34cfba9ad7991380d26984ebd0761925773530e24d8dd8b6894738" "dca64882039075757807f5cead3cee7a9704223fab1641a9f1b7982bdbb5a0e2" "31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf" default))
+   '("31014fae0ca149e8bbffe40826f8f5952fdb91ea534914622d614b2219e04eaf"
+     default))
  '(display-line-numbers-type 'relative)
  '(doom-modeline-bar-width 4)
  '(doom-modeline-buffer-name t)
@@ -55,10 +62,13 @@
  '(scroll-bar-mode nil)
  '(spacious-padding-mode t)
  '(spacious-padding-widths
-   '(:internal-border-width 15 :header-line-width 4 :mode-line-width 0 :tab-width 4 :right-divider-width 30 :scroll-bar-width 8 :fringe-width 8))
+   '(:internal-border-width 15 :header-line-width 4 :mode-line-width 0
+			    :tab-width 4 :right-divider-width 30
+			    :scroll-bar-width 8 :fringe-width 8))
  '(tab-bar-close-button-show nil)
  '(tab-bar-format
-   '(tab-bar-format-menu-bar tab-bar-format-history tab-bar-format-tabs tab-bar-separator))
+   '(tab-bar-format-menu-bar tab-bar-format-history tab-bar-format-tabs
+			     tab-bar-separator))
  '(tab-bar-mode nil)
  '(tab-line-close-button-show nil)
  '(tool-bar-mode nil))
@@ -67,4 +77,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(variable-pitch ((t (:family "Ubuntu")))))
+ )
