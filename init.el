@@ -28,15 +28,15 @@
   :straight t)
 (use-package spacious-padding
   :straight t)
-(use-package toolbox-tramp
- :straight (toolbox-tramp
-   :type git
-   :host github
-   :repo "fejfighter/toolbox-tramp"))
 (use-package gleam-ts-mode
   :straight t
   :mode (rx ".gleam" eos))
 
+
+;; Extra non-custom vars
+(add-to-list
+ 'default-frame-alist
+ '( font . JetBrains Mono))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
