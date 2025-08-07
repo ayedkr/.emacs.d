@@ -36,7 +36,7 @@
 ;; Extra non-custom vars
 (add-to-list
  'default-frame-alist
- '( font . JetBrains Mono))
+ '( font . "JetBrains Mono"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
